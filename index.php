@@ -19,5 +19,13 @@
         <br>
         <input type="submit" value="Enviar">
     </form>
+    
+    <?php
+    //en cas de que l'usuari no existeixi rep l'error de validar.php i el mostra a sota del tot
+    if (isset($_GET['error'])) {
+        $error = $_GET['error'];
+        echo "<p>Error: $error</p>";
+    }
+    ?>
 </body>
 </html>
