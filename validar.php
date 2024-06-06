@@ -22,8 +22,6 @@
     //redirigim a la pàgina del resultat si el login es true
     if ($_SESSION['sessio_login'] == true){
         header("Location: resultat.php");
-    } else {
-        header("Location: index.php");
     }
     
     // si la sessio_login es false, retorna a index.html ficant usuari no trobat
